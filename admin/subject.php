@@ -4,7 +4,7 @@
                 <!--Linker kant-->
             </div>
             <div class="col-md-6">
-                <h1>Vak koppelen</h1>
+                <h1>Houdt bij welk kind welke vakken hulp in krijgt</h1>
                 <?php
                 if($_SESSION['alert']) {
                     echo $_SESSION['message']; 
@@ -29,7 +29,7 @@
                 <h4>Selecteer een kind.</h4>
                 <?php } else { ?>               
                 <form method="post" accept-charset="utf-8">
-                        <h4>Vakken van <?php echo $_SESSION['subjectUser']; ?>:</h4>
+                    <h4>Vakken van <?php echo $_SESSION['subjectUser']; ?>:</h4>
                     <div class="form-group checkbox">
                         <?php
                         $userSubject = subjectManagement::getUserSubject($_SESSION['subjectUser']);
